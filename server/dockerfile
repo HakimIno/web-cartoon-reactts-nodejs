@@ -1,0 +1,23 @@
+# Use Node.js version 16 as the base image
+FROM node:16
+
+# Set the working directory in the container
+WORKDIR /app
+
+# Copy package.json and package-lock.json to the container
+COPY package*.json ./
+
+# Install dependencies
+RUN npm install
+
+# Copy the rest of the application to the container
+COPY . .
+
+# Set the environment variable for the MongoDB connection string
+ENV MONGODB mongodb+srv://Videomovie:Kim0878744635@cluster0.bmqojm3.mongodb.net/?retryWrites=true&w=majority
+
+# Expose port 8800
+EXPOSE 8800
+
+# Start the application
+CMD ["npm", "start"]
