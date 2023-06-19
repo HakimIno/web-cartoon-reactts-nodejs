@@ -2,21 +2,15 @@
 
 I use React TypeScript for the frontend, for the backend, I use node js, mongodb, aws, docker-compose
 
-# git clone repository
+git clone repository
 
-# cd client
+cd client
 
-# yarn 
+yarn 
 
-# yarn dev
+cd server
 
-# new terminal
-
-# cd ..
-
-# cd server
-
-# docker-compose up -d
+docker-compose up -d
 
 #Exemple 
 ![image](https://github.com/HakimIno/web-cartoon-reactts-nodejs/assets/78003589/a2349e3d-59e9-426b-ba25-c09c1d5c1f2e)
